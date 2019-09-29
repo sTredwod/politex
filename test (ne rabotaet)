@@ -1,0 +1,27 @@
+def проверка (k):
+    while type (k)==str:
+        if k.isdigit ():
+            return int (k)
+            
+        else:
+            print ('напиши число')
+            k=input ()
+a = int(input('введи число a '))
+a1 = proverka (a)
+b = int(input('введи число b '))
+b1 = proverka (b)
+c = int(input('введи число c '))
+c1 = proverka (c)
+def discriminant(a,b,c):
+    return b1**2-4*a*c1
+if discriminant(a,b,c)>0:
+    x1= (-1*b- discriminant(a,b,c)**(1/2))/(2*a)
+    x2= (-1*b+ discriminant(a,b,c)**(1/2))/(2*a)
+    print ('икс первый будет ' + str(x1(a,b,c)))
+    print ('икс второй будет ' + str(x2(a,b,c)))
+elif discriminant(a,b,c)==0:
+    x1= (-1*b1)/(2*a1)
+    print ('икс первый будет ' + str(x1(a,b,c)))
+else:
+    print ('нет решения')
+
