@@ -1,0 +1,22 @@
+  def Proverka(k):
+    while type(k) == str:
+        if k.isdigit():
+            return int(k)
+        else:
+            print("давай по новой но вводи число")
+            k = input()
+a = Proverka(input('введи число a '))
+b = Proverka(input('введи число b '))
+c = Proverka(input('введи число c '))
+def discriminant(a1,b1,c1):
+    return b1 ** 2 - 4 * a1 * c1
+if discriminant(a,b,c) > 0:
+    x1 = (-1 * b - discriminant(a, b, c) ** (1 / 2)) / (2 * a)
+    x2 = (-1 * b - discriminant(a, b, c) ** (1 / 2)) / (2 * a)
+    print('икс первый будет ' + int(x1(a,b,c)))
+    print('икс второй будет ' + int(x2(a,b,c)))
+elif discriminant(a,b,c) == 0:
+    x1 = (-1 * b) / (2 * a)
+    print(x1)
+else:
+    print("No solutions")
