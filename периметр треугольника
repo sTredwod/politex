@@ -1,0 +1,12 @@
+program triangle;
+var a,b,c,per :real;
+begin
+write ('введите a = ');
+readln (a);
+write ('введи b = ');
+readln (b);
+c:=sqrt(a*a+b*b);
+per:=(a+b+c);
+writeln ('периметр равен ', per:2:2);
+readln; 
+end.
