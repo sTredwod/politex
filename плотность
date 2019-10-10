@@ -1,0 +1,11 @@
+program plotnost_tela;
+var m, v, p:real;
+begin
+write ('масса равна = ');
+read (m);
+write ('обьем равен = ');
+read(v);
+p:=(m/v);
+writeln ('плотность тела равна ', p);
+readln;
+end.
