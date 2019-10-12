@@ -1,18 +1,25 @@
-a = int(input('введи число a '))
+def check(x):
+    while type(x) == str:
+        if x.isdigit():
+            return int(x)
+        else:
+            print("давай по новой но вводи число")
+            x = input()
+a = check(input('введи число a '))
 while type(a)==str:
     if a.isdigit():
         a=int(a)
     else:
         print ('неправильно пишешь число надо')
         a=input()
-b=int(input('введи число b '))
+b = check(input('введи число b '))
 while type(b)==str:
     if b.isdigit():
         b=int(b)
     else:
         print ('неправильно пишешь число надо')
         b=input()
-c=int(input('введи число c '))
+c = check(input('введи число c '))
 while type (c)==str:
     if c.isdigit():
         c=int(c)
