@@ -3,28 +3,14 @@ def check(x):
         if x.isdigit():
             return int(x)
         else:
-            print("давай по новой но вводи число")
+            print("тебя же попросили число ввести, а не букву или символ")
             x = input()
 a = check(input('введи число a '))
-while type(a)==str:
-    if a.isdigit():
-        a=int(a)
-    else:
-        print ('неправильно пишешь число надо')
-        a=input()
+
 b = check(input('введи число b '))
-while type(b)==str:
-    if b.isdigit():
-        b=int(b)
-    else:
-        print ('неправильно пишешь число надо')
-        b=input()
+
 c = check(input('введи число c '))
-while type (c)==str:
-    if c.isdigit():
-        c=int(c)
-    else:
-            print('неправильно пишешь число надо')
+
 def discriminant (a,b,c):
     return b**2-4*a*c
     
