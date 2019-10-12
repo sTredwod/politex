@@ -6,26 +6,20 @@ def check(x):
             print("тебя же попросили число ввести, а не букву или символ")
             x = input()
 a = check(input('введи число a '))
-
 b = check(input('введи число b '))
-
 c = check(input('введи число c '))
-
 def discriminant (a,b,c):
     return b**2-4*a*c
-    
 def x1(a,b,c):
     if(discriminant(a,b,c)  >=0):
         return (-1*b - discriminant(a,b,c)** 1/2*a)
     else:
         raise Exception( "нет решения")
-        
 def x2(a,b,c):
     if (discriminant(a,b,c) >=0):
         return (-1*b + discriminant(a,b,c)** 1/2*a)
     else:
         raise Exception("нет решения")
-        
 print ('икс первый будет ' + str(x1(a,b,c)))
 print ('икс второй будет ' + str(x2(a,b,c)))
 print ('самому надо решать понял голова тебе для чего')
