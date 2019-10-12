@@ -1,0 +1,41 @@
+a = int(input('введи число a '))
+while type(a)==str:
+    if a.isdigit():
+        a1=int(a)
+        a=a1
+    else:
+        print ('неправильно пишешь число надо')
+        a=input()
+b=int(input('введи число b '))
+while type(b)==str:
+    if b.isdigit():
+        b1=int(b)
+        b=b1
+    else:
+        print ('неправильно пишешь число надо')
+        b=input()
+c=int(input('введи число c '))
+while type (c)==str:
+    if c.isdigit():
+        c1=int(c)
+        c=c1
+    else:
+            print('неправильно пишешь число надо')
+def discriminant (a,b,c):
+    return b**2-4*a*c
+    
+def x1(a,b,c):
+    if(discriminant(a,b,c)  >=0):
+        return (-1*b - discriminant(a,b,c)** 1/2*a)
+    else:
+        raise Exception( "No real resolutions")
+        
+def x2(a,b,c):
+    if (discriminant(a,b,c) >=0):
+        return (-1*b + discriminant(a,b,c)** 1/2*a)
+    else:
+        raise Exception("No real resolutions")
+        
+print ('икс первый будет ' + str(x1(a,b,c)))
+print ('икс второй будет ' + str(x2(a,b,c)))
+print ('самому надо решать понял голова тебе для чего')
