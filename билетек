@@ -1,0 +1,24 @@
+program biletik;
+function KolSch(a,b:longint):longint;
+var i,k:longint;
+    sl,sp:byte;
+begin
+k:=0;
+for i:=a to b do
+ begin
+  sl:=i div 100000+(i div 10000 mod 10)+(i div 1000 mod 10);
+  sp:=(i div 100 mod 10)+(i div 10 mod 10)+i mod 10;
+  if sl=sp then 
+    k:=k+1;
+ end;
+KolSch:=k;
+end;
+var n,m:longint;
+begin
+  repeat
+    write('введи два числа от 000000 до 999999: ');
+    readln(n,m);
+  until(n>=000000)and(n<=999999)and(m>n)and(m<=999999);
+write('если считать от ',n,' до ',m,' то счастливых билетов будет ' ,KolSch(n,m));
+readln
+end.
