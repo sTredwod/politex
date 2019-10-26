@@ -1,0 +1,19 @@
+program biletik;
+var a,b,c,d,e,f,x,y,z:longint;
+begin
+x:=9;
+      for a:=0 to x do
+      for b:=0 to x do
+      for c:=0 to x do
+      for d:=0 to x do
+      for e:=0 to x do
+      for f:=0 to x do
+begin
+       y:=a+b+c;
+       z:=d+e+f;
+          if (y=z) then
+       
+          
+       
+end;
+end.
