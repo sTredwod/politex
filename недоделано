@@ -1,0 +1,14 @@
+program sklonyator;
+Var a,b:string;
+Begin
+Writeln('введи фамилию, заканчивающуюся на -ов');
+Readln(a);
+Writeln('введите вопрос для склонения(прим. "кого", "кем" или "кому")');
+Readln(b);
+ case b of
+  ('кого'): a:=a+'a';
+  ('кем'): a:=a+'ым';
+  ('кому'): a:=a+'у';
+readln(a);
+  if 
+  
