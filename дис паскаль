@@ -1,0 +1,27 @@
+var a,b,c,d,x1,x2: real;
+x:real;
+begin
+  write('введи a: ');
+  readln (a);
+  write('введи b: ');
+  readln (b);
+  write('введи c: ');
+  readln (c);
+  //Дискриминант 
+  d:=sqr(b)-4*a*c;
+  if d<0 Then writeln('нет решения')
+  else 
+  if d=0 Then
+  begin
+       x:=-b/(2*a);
+       writeln(x);    
+  end
+  else
+  begin
+        x1:=(-b + sqrt(D))/(2*a);
+        writeln(x);
+        x2:=(-b - sqrt(D))/(2*a);
+        writeln('x1 равен ', x1);
+        writeln('x2 равен ', x2);
+  end;
+end.
