@@ -1,0 +1,15 @@
+Type Car = class
+Fuel, doors: longint;
+Color: string;
+procedure newcolor (s: string);
+end;
+ 
+procedure Car.newcolor(s: string);
+begin
+color:= s;
+end;
+ 
+var c: car;
+begin
+c.newcolor ('Белый');
+end.
