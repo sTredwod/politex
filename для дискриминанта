@@ -4,7 +4,7 @@ def check(x):
         if x.isdigit():
             return int(x)
         else:
-            print("тебя же попросили число ввести, а не букву или символ")
+            print("нужно число ввести, а не букву или символ")
             x = input()
 a = check (input('введи число a '))
 b = check (input('введи число b '))
@@ -23,4 +23,4 @@ def x2(a,b,c):
         raise Exception("нет решения")
 print ('икс первый будет ' + str(x1(a,b,c)))
 print ('икс второй будет ' + str(x2(a,b,c)))
-print ('самому надо решать понял голова тебе для чего')
+
